@@ -25,9 +25,7 @@ enum WindowManager {
         }
         window.windowLevel = .alert + 1
 
-        let navigation = OrientationForwardingNavigationController(
-            rootViewController: UIViewController()
-        )
+        let navigation = OrientationForwardingNavigationController(rootViewController: UIViewController())
         navigation.interactivePopGestureRecognizer?.isEnabled = false
         navigation.setBackgroundColor(color: .clear)
         window.rootViewController = navigation
